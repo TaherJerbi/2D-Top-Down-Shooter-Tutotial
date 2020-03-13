@@ -6,12 +6,9 @@ public class HealthManager : MonoBehaviour
 {
     static float _MAXHEALTH = 100f;
     [SerializeField]
-    private float health = 100f;
+    public float health = 100f;
     public Behaviour[] disableOnDeath;
-    private void Start()
-    {
-        health = _MAXHEALTH;
-    }
+    
 
     public void TakeDamage(float amount)
     {
